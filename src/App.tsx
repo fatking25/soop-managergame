@@ -25,7 +25,7 @@ function isDigit(code: string, key: string, n: "1" | "2" | "3") {
 }
 
 export default function App() {
-  useBgm("/audio/bgm.mp3", 0.2); // ✅ 추가 (경로/볼륨만 필요)
+  useBgm(import.meta.env.BASE_URL + "/audio/bgm.mp3", 0.2); // ✅ 추가 (경로/볼륨만 필요)
 
   const engineRef = useRef<GameEngine | null>(null);
   const rafRef = useRef<number | null>(null);
