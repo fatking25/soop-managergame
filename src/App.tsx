@@ -7,6 +7,8 @@ import ResultScreen from "./ui/ResultScreen";
 import TutorialOverlay from "./ui/TutorialOverlay";
 import { GameEngine } from "./game/gameEngine";
 import type { ActionKind, StreamMood } from "./game/types";
+import { useBgm } from './hooks/useBgm'
+
 
 const TOPBAR_H = 60;
 const HUD_H = 86;
@@ -23,6 +25,8 @@ function isDigit(code: string, key: string, n: "1" | "2" | "3") {
 }
 
 export default function App() {
+  useBgm("/audio/bgm.mp3", 0.2); // ✅ 추가 (경로/볼륨만 필요)
+
   const engineRef = useRef<GameEngine | null>(null);
   const rafRef = useRef<number | null>(null);
   const lastRef = useRef<number>(performance.now());
