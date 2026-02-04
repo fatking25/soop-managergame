@@ -9,10 +9,10 @@
 ## 🔗 링크
 
 - 🎮 **플레이:**  
-  https://devsolostudio.github.io/SOOP-RPG/
+  https://fatking25.github.io/soop-managergame/
 
 - 💻 **GitHub 저장소:**  
-  https://github.com/DEVSOLOSTUDIO/SOOP-RPG
+  https://github.com/fatking25/soop-managergame
 
 ---
 
